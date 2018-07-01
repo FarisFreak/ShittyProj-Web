@@ -166,7 +166,7 @@ function getPrice(){
 	global $con;
 	$query = mysqli_query($con, "SELECT * FROM config");
 	$row = mysqli_fetch_array($query);
-	echo $row['pricereg'];
+	return $row['pricereg'];
 }
 
 function creditBalance($username, $price, $points){

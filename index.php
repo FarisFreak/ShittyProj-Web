@@ -92,7 +92,7 @@ headpage('Main');
 						if (getrole() == 'RESELLER'){
 							?>
 							<li>
-								<a href="#"><i class="fa fa-users fa-fw"></i> User</a>
+								<a href="#"><i class="fa fa-users fa-fw"></i> Reseller</a>
 								<ul class="nav nav-second-level">
 									<li>
 										<a href="#" id="user-add" onclick="return false;">Add User <kbd><?php echo getPrice(); ?></kbd></a>
@@ -370,9 +370,9 @@ $("#admin-user-add").click(function(){buka('pages/admin-user_add');})
 $("#admin-user-manage").click(function(){buka('pages/admin-user_manage');})
 //
 $("#pan-reghdsn").click(function (){
-	$("#nul-games").addClass("in");
-	$("#nul-pb").addClass("in");
-	$('#pb-reg').click();
+	//$("#nul-games").addClass("in");
+	//$("#nul-pb").addClass("in");
+	buka('pages/pb-register');
 });
 //
 $("#res-copy").click(function(){
